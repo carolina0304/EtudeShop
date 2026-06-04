@@ -452,10 +452,10 @@ const products = [
     price: "$460",
     desc: "48 horas frío • Tapa 3 en 1 • Acero inoxidable",
     images: [
-      "/images/IMG_8883.jpg",
-      "/images/IMG_8885.jpg",
-      "/images/IMG_8886.jpg",
-      "/images/IMG_8887.jpg",
+      "/images/IMG_8883.JPG",
+      "/images/IMG_8885.JPG",
+      "/images/IMG_8886.JPG",
+      "/images/IMG_8887.JPG",
     ],
     bg: "#edfaf3",
     tag: "Tendencia",
@@ -663,17 +663,17 @@ export default function App() {
             fontWeight: 600,
           }}
         >
-          {["Catálogo", "Termos", "Cocina", "Regalos"].map((l) => (
+          {[{ label: "Catálogo", href: "#productos" }].map((l) => (
             <a
-              key={l}
-              href="#"
+              key={l.label}
+              href={l.href}
               style={{
                 color: "#555",
                 textDecoration: "none",
                 display: window.innerWidth < 640 ? "none" : "block",
               }}
             >
-              {l}
+              {l.label}
             </a>
           ))}
         </div>
@@ -749,7 +749,7 @@ export default function App() {
               border: `1.5px solid ${C.doradoMid}`,
             }}
           >
-            ✨ Como los ves en TikTok
+            ✨ Los productos más virales de TikTok
           </div>
 
           {/* H1 — Poppins, copy directo */}
@@ -763,7 +763,7 @@ export default function App() {
               margin: "0 0 1rem",
             }}
           >
-            Los termos Stanley que{" "}
+            Consigue los termos y accesorios{" "}
             <span
               style={{
                 background: C.dorado,
@@ -773,7 +773,7 @@ export default function App() {
                 display: "inline-block",
               }}
             >
-              arrasan en TikTok.
+              en tendencia.
             </span>
           </h1>
 
@@ -852,31 +852,36 @@ export default function App() {
       {/* ── BRANDS ── */}
       <div
         style={{
-          background: C.dorado,
+          background: "#ebeae3",
           padding: "14px 2rem",
           display: "flex",
-          gap: "2.5rem",
+          gap: "2rem",
           justifyContent: "center",
           flexWrap: "wrap",
           alignItems: "center",
         }}
       >
-        {brands.map((b) => (
-          <span
-            key={b}
+        {[
+          { nombre: "Stanley", archivo: "/images/stanley-ogo.png" },
+          { nombre: "Thermoflask", archivo: "/images/thermoflask.jpg" },
+          { nombre: "Reduce", archivo: "/images/reduce.png" },
+          { nombre: "King Crystal", archivo: "/images/kingcristal.png" },
+          { nombre: "Alexas", archivo: "/images/Alexa.png" },
+          { nombre: "Titan", archivo: "/images/logo_titan.png" },
+        ].map((b) => (
+          <img
+            key={b.nombre}
+            src={b.archivo}
+            alt={b.nombre}
             style={{
-              color: "#fff",
-              fontWeight: 700,
-              fontSize: "14px",
-              letterSpacing: "1px",
-              fontFamily: "'Nunito', sans-serif",
+              height: "28px",
+              objectFit: "contain",
+              /*filter: "brightness(0) invert(1)", */
+              opacity: 0.9,
             }}
-          >
-            {b}
-          </span>
+          />
         ))}
       </div>
-
       {/* ── GARANTÍAS ── */}
       <div
         style={{
@@ -1141,7 +1146,7 @@ export default function App() {
             margin: "0 0 1rem",
           }}
         >
-          ¿Buscas el regalo perfecto? 🎁
+          ¿Ya viste algo que te gustó? 👀
         </h2>
         <p
           style={{
@@ -1153,8 +1158,8 @@ export default function App() {
             lineHeight: 1.7,
           }}
         >
-          Escríbenos y te ayudamos a encontrar el producto ideal. ¡Sin
-          compromiso!
+          No esperes a que se agote. Escríbenos y lo apartamos para ti ahora
+          mismo.
         </p>
         <a
           href="https://wa.me/524921071124?text=Hola%2C%20quiero%20encontrar%20un%20regalo%20en%20ETUDE%20✨"
@@ -1172,7 +1177,7 @@ export default function App() {
             fontFamily: "'Nunito', sans-serif",
           }}
         >
-          📩 Escribir por WhatsApp
+          Quiero apartar el mío ⚡
         </a>
       </section>
 
@@ -1202,16 +1207,9 @@ export default function App() {
           🏡
         </p>
         <p style={{ margin: "0 0 8px" }}>
-          ✨ Venta de artículos prácticos y de tendencia para tu día a día ✨
+          100% originales • Envío seguro • Atención por WhatsApp
         </p>
         <p style={{ margin: 0 }}>
-          <a
-            href="https://instagram.com/tu_cuenta"
-            style={{ color: C.dorado, textDecoration: "none", fontWeight: 700 }}
-          >
-            📸 Instagram
-          </a>
-          {" · "}
           <a
             href="https://wa.me/524921071124"
             style={{ color: C.dorado, textDecoration: "none", fontWeight: 700 }}
