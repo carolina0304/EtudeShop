@@ -1,0 +1,19 @@
+{
+  "name": "etudeshop",
+  "version": "1.0.0",
+  "description": "𝗩𝗲𝗻𝘁𝗮 𝗱𝗲 𝗮𝗿𝘁í𝗰𝘂𝗹𝗼𝘀 𝗽𝗿𝗮́𝗰𝘁𝗶𝗰𝗼𝘀 𝘆 𝗱𝗲 𝘁𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗮 𝗽𝗮𝗿𝗮 𝘁𝘂 𝗱í𝗮 𝗮 𝗱í𝗮",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolina0304/EtudeShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolina0304/EtudeShop/issues"
+  },
+  "homepage": "https://github.com/carolina0304/EtudeShop#readme"
+}
