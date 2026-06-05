@@ -357,7 +357,7 @@ const products = [
   {
     id: 4,
     name: "Set de Vasos King Cristal",
-    category: "Cocina",
+    category: "Hogar",
     price: "$550",
     desc: "Capacidad de 480 ml • Alta Resistencia • Tapa y popote",
     images: [
@@ -406,7 +406,7 @@ const products = [
   {
     id: 7,
     name: "Picadora y Rebanadora MIU",
-    category: "Cocina",
+    category: "Hogar",
     price: "$490",
     desc: "9 cuchillas intercambiables • Base Antideslizante • Acero inoxidable",
     images: [
@@ -422,7 +422,7 @@ const products = [
   {
     id: 8,
     name: "Platos Hondos Over & Back",
-    category: "Cocina",
+    category: "Hogar",
     price: "$450",
     desc: "6 platos • Cerámica resistente • Acabado moderno",
     images: [
@@ -563,7 +563,7 @@ const categories = [
   "Botellas",
   "Loncheras",
   "Alexas",
-  "Cocina",
+  "Hogar",
 ];
 const brands = [
   "Stanley",
@@ -778,6 +778,21 @@ export default function App() {
           </h1>
 
           {/* Subtítulo — resuelve 3 objeciones en 1 línea */}
+
+          <p
+            style={{
+              fontFamily: "'Nunito', sans-serif",
+              fontSize: "15px",
+              color: "#888",
+              maxWidth: "480px",
+              margin: "0 auto 2rem",
+              lineHeight: 1.7,
+            }}
+          >
+            También loncheras Titan, gadgets del hogar y todo lo que está en
+            tendencia. 🎁
+          </p>
+
           <p
             style={{
               fontFamily: "'Nunito', sans-serif",
@@ -793,15 +808,14 @@ export default function App() {
           <p
             style={{
               fontFamily: "'Nunito', sans-serif",
-              fontSize: "15px",
-              color: "#888",
+              fontSize: "16px",
+              color: "#666",
               maxWidth: "480px",
-              margin: "0 auto 2rem",
+              margin: "0 auto 0.6rem",
               lineHeight: 1.7,
             }}
           >
-            También loncheras Titan, gadgets de cocina y todo lo que está en
-            tendencia. 🎁
+            📍 Querétaro
           </p>
 
           <div
@@ -1159,7 +1173,7 @@ export default function App() {
           }}
         >
           No esperes a que se agote. Escríbenos y lo apartamos para ti ahora
-          mismo.
+          mismo. 📍 Entregas en Querétaro.
         </p>
         <a
           href="https://wa.me/524921071124?text=Hola%2C%20quiero%20encontrar%20un%20regalo%20en%20ETUDE%20✨"
