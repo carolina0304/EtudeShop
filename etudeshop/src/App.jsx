@@ -1231,6 +1231,7 @@ export default function App() {
             💬 WhatsApp
           </a>
         </p>
+        <p style={{ margin: "50px 0 8px" }}>Carolina Gómez Copyright © 2026</p>
       </footer>
     </div>
   );
