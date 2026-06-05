@@ -554,6 +554,22 @@ const products = [
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
   },*/
+
+  {
+    id: 17,
+    name: "Cesto de ropa Seville Classics",
+    category: "Hogar",
+    price: "$550",
+    desc: "Diseño Elegante • Bolsa interior extraíble • Resistente y duradero",
+    images: [
+      "/images/431354951729182.webp",
+      "/images/431354952384542.webp",
+      "/images/431354955333662.webp",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nuevo",
+    urgencia: "🔥 Últimas unidades",
+  },
 ];
 
 const categories = [
