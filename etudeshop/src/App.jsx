@@ -538,7 +538,7 @@ const products = [
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
   },
-  {
+  /*{
     id: 16,
     name: "Alexa Amazon Echo Show 5",
     category: "Alexas",
@@ -553,7 +553,7 @@ const products = [
     bg: "#fdf6ec",
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
-  },
+  },*/
 ];
 
 const categories = [
