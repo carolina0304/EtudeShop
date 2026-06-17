@@ -570,6 +570,22 @@ const products = [
     tag: "Nuevo",
     urgencia: "🔥 Últimas unidades",
   },
+  {
+    id: 18,
+    name: "Taza o Vaso Thermoflask",
+    category: "Termos",
+    price: "$250",
+    desc: "Termico • Bebida fria o caliente hasta 6horas • Resistente y duradero",
+    images: [
+      "/images/vasorosa.jpeg",
+      "/images/vasoamarillo.jpeg",
+      "/images/vasoazul.jpeg",
+      "/images/pa.jpeg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Tendencia",
+    urgencia: "🔥 Últimas unidades",
+  },
 ];
 
 const categories = [
