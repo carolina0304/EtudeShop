@@ -308,6 +308,40 @@ function ImageCarousel({ images, bg, tag, onImageClick }) {
 const products = [
   {
     id: 1,
+    name: "Stanley Qhencher Rosa Cuarzo 887 ml",
+    category: "Stanley",
+    price: "$890",
+    desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
+    images: [
+      "/images/IMG_4863.JPG.jpg",
+      "/images/IMG_4864.JPG.jpg",
+      "/images/IMG_4865.JPG.jpg",
+      "/images/IMG_4867.JPG.jpg",
+      "/images/IMG_4869.JPG.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 2,
+    name: "Stanley Qhencher Azul 887 ml",
+    category: "Stanley",
+    price: "$890",
+    desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
+    images: [
+      "/images/IMG_4854.JPG.jpg",
+      "/images/IMG_4856.JPG.jpg",
+      "/images/IMG_4857.JPG.jpg",
+      "/images/IMG_4860.JPG.jpg",
+      "/images/IMG_4861.JPG.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Más vendido",
+    urgencia: "🔥 Últimas 3 unidades",
+  },
+  {
+    id: 3,
     name: "Stanley Iceflow Toronja 887 ml",
     category: "Stanley",
     price: "$890",
@@ -322,7 +356,7 @@ const products = [
     urgencia: "🔥 Últimas 3 unidades",
   },
   {
-    id: 2,
+    id: 4,
     name: "Lonchera Titan Deep Freeze",
     category: "Loncheras",
     price: "$690",
@@ -339,7 +373,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 3,
+    id: 5,
     name: "Termo Reduce Halo 946ml",
     category: "Termos",
     price: "$350",
@@ -355,7 +389,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 4,
+    id: 6,
     name: "Set de Vasos King Cristal",
     category: "Hogar",
     price: "$550",
@@ -371,7 +405,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 5,
+    id: 7,
     name: "Thermoflask 740ml",
     category: "Termos",
     price: "$350",
@@ -388,7 +422,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 6,
+    id: 8,
     name: "Termo Reduce NIÑOS",
     category: "Termos",
     price: "$250",
@@ -404,7 +438,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 7,
+    id: 9,
     name: "Picadora y Rebanadora MIU",
     category: "Hogar",
     price: "$490",
@@ -420,7 +454,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 8,
+    id: 10,
     name: "Platos Hondos Over & Back",
     category: "Hogar",
     price: "$450",
@@ -435,7 +469,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 9,
+    id: 11,
     name: "Thermoflask 1.2 lts.",
     category: "Termos",
     price: "$350",
@@ -446,7 +480,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 10,
+    id: 12,
     name: "Termo Reduce 1.48 lts.",
     category: "Termos",
     price: "$460",
@@ -462,7 +496,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 11,
+    id: 13,
     name: "Stanley Iceflow Verde 887 ml",
     category: "Stanley",
     price: "$890",
@@ -478,7 +512,7 @@ const products = [
     urgencia: "🔥 Última unidad",
   },
   {
-    id: 12,
+    id: 14,
     name: "Stanley Iceflow Morado 887 ml",
     category: "Stanley",
     price: "$890",
@@ -493,7 +527,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 13,
+    id: 15,
     name: "Botella Tritan Zulu",
     category: "Botellas",
     price: "$200",
@@ -508,7 +542,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 14,
+    id: 16,
     name: "Jarra Reduce",
     category: "Botellas",
     price: "$200",
@@ -524,7 +558,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 15,
+    id: 17,
     name: "Alexa Amazon Pop",
     category: "Alexas",
     price: "$890",
@@ -539,7 +573,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   /*{
-    id: 16,
+    id: 18,
     name: "Alexa Amazon Echo Show 5",
     category: "Alexas",
     price: "$1800",
@@ -556,7 +590,7 @@ const products = [
   },*/
 
   {
-    id: 17,
+    id: 19,
     name: "Cesto de ropa Seville Classics",
     category: "Hogar",
     price: "$550",
@@ -571,7 +605,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 18,
+    id: 20,
     name: "Taza o Vaso Thermoflask",
     category: "Termos",
     price: "$250",
