@@ -408,7 +408,7 @@ const products = [
     id: 7,
     name: "Thermoflask 740ml",
     category: "Termos",
-    price: "$350",
+    price: "$300",
     desc: "Antiderrames • Acero inoxidable • Asa Plegable",
     images: [
       "/images/IMG_4037.JPG",
