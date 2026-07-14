@@ -359,7 +359,7 @@ const products = [
     id: 4,
     name: "Lonchera Titan Deep Freeze",
     category: "Loncheras",
-    price: "$690",
+    price: "$650",
     desc: "Alta capacidad • Mantiene temp. 8 hrs • Impermeable",
     images: [
       "/images/IMG_4510.JPG",
@@ -468,7 +468,7 @@ const products = [
     tag: "Ideal de regalo",
     urgencia: "🔥 Pocas unidades",
   },
-  {
+  /*{
     id: 11,
     name: "Thermoflask 1.2 lts.",
     category: "Termos",
@@ -478,7 +478,7 @@ const products = [
     bg: "#fdf2ec",
     tag: "Tendencia",
     urgencia: "🔥 Pocas unidades",
-  },
+  },*/
   {
     id: 12,
     name: "Termo Reduce 1.48 lts.",
@@ -589,7 +589,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },*/
 
-  {
+  /*{
     id: 19,
     name: "Cesto de ropa Seville Classics",
     category: "Hogar",
@@ -603,7 +603,7 @@ const products = [
     bg: "#fdf6ec",
     tag: "Nuevo",
     urgencia: "🔥 Últimas unidades",
-  },
+  },*/
   {
     id: 20,
     name: "Taza o Vaso Thermoflask",
