@@ -497,6 +497,25 @@ const products = [
   },
   {
     id: 13,
+    name: "Tazas Reduce 510 ml",
+    category: "Reduce",
+    price: "$300 c/u",
+    desc: "Mantiene caliente 6 hrs • Incluye tapa • Acero inoxidable",
+    images: [
+      "/images/vasos1a.webp",
+      "/images/vasos1.webp",
+      "/images/vasos4.webp",
+      "/images/vasos5.webp",
+      "/images/vasos6.webp",
+      "/images/vasos7.webp",
+      "/images/vasos8.webp",
+    ],
+    bg: "#fdf6ec",
+    tag: "Más vendido",
+    urgencia: "🔥 Última unidad",
+  },
+  /*{
+    id: 13,
     name: "Stanley Iceflow Verde 887 ml",
     category: "Stanley",
     price: "$890",
@@ -510,7 +529,7 @@ const products = [
     bg: "#fdf6ec",
     tag: "Más vendido",
     urgencia: "🔥 Última unidad",
-  },
+  },*/
   {
     id: 14,
     name: "Stanley Iceflow Morado 887 ml",
