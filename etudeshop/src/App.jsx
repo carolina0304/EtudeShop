@@ -310,7 +310,7 @@ const products = [
     id: 1,
     name: "Stanley Qhencher Rosa Cuarzo 887 ml",
     category: "Stanley",
-    price: "$890",
+    price: "$790",
     desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
     images: [
       "/images/IMG_4863.JPG.jpg",
@@ -327,7 +327,7 @@ const products = [
     id: 2,
     name: "Stanley Qhencher Azul 887 ml",
     category: "Stanley",
-    price: "$890",
+    price: "$790",
     desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
     images: [
       "/images/IMG_4854.JPG.jpg",
@@ -344,7 +344,7 @@ const products = [
     id: 3,
     name: "Stanley Iceflow Toronja 887 ml",
     category: "Stanley",
-    price: "$890",
+    price: "$790",
     desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
     images: [
       "/images/stanleyamarillo1.webp",
@@ -359,7 +359,7 @@ const products = [
     id: 4,
     name: "Lonchera Titan Deep Freeze",
     category: "Loncheras",
-    price: "$650",
+    price: "$590",
     desc: "Alta capacidad • Mantiene temp. 8 hrs • Impermeable",
     images: [
       "/images/IMG_4510.JPG",
@@ -376,7 +376,7 @@ const products = [
     id: 5,
     name: "Termo Reduce Halo 946ml",
     category: "Termos",
-    price: "$350",
+    price: "$250",
     desc: "Antiderrames • Asa plegable • Popote de silicona",
     images: [
       "/images/IIDB5768.JPG",
@@ -392,7 +392,7 @@ const products = [
     id: 6,
     name: "Set de Vasos King Cristal",
     category: "Hogar",
-    price: "$550",
+    price: "$500",
     desc: "Capacidad de 480 ml • Alta Resistencia • Tapa y popote",
     images: [
       "/images/IDVK8013.JPG",
@@ -457,7 +457,7 @@ const products = [
     id: 10,
     name: "Platos Hondos Over & Back",
     category: "Hogar",
-    price: "$450",
+    price: "$400",
     desc: "6 platos • Cerámica resistente • Acabado moderno",
     images: [
       "/images/JXXT8619.JPG",
@@ -483,7 +483,7 @@ const products = [
     id: 12,
     name: "Termo Reduce 1.48 lts.",
     category: "Termos",
-    price: "$460",
+    price: "$400",
     desc: "48 horas frío • Tapa 3 en 1 • Acero inoxidable",
     images: [
       "/images/IMG_8883.JPG",
@@ -499,7 +499,7 @@ const products = [
     id: 13,
     name: "Tazas Reduce 510 ml",
     category: "Reduce",
-    price: "$300 c/u",
+    price: "$290 c/u",
     desc: "Mantiene caliente 6 hrs • Incluye tapa • Acero inoxidable",
     images: [
       "/images/vasos1a.webp",
@@ -534,7 +534,7 @@ const products = [
     id: 14,
     name: "Stanley Iceflow Morado 887 ml",
     category: "Stanley",
-    price: "$890",
+    price: "$790",
     desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
     images: [
       "/images/IMG_4637.jpg",
@@ -576,7 +576,7 @@ const products = [
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
   },
-  {
+  /*{
     id: 17,
     name: "Alexa Amazon Pop",
     category: "Alexas",
@@ -590,7 +590,7 @@ const products = [
     bg: "#fdf6ec",
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
-  },
+  },*/
   /*{
     id: 18,
     name: "Alexa Amazon Echo Show 5",
@@ -631,9 +631,9 @@ const products = [
     desc: "Termico • Bebida fria o caliente hasta 6horas • Resistente y duradero",
     images: [
       "/images/vasorosa.jpeg",
-      "/images/vasoamarillo.jpeg",
+      /*"/images/vasoamarillo.jpeg",*/
       "/images/vasoazul.jpeg",
-      "/images/pa.jpeg",
+      /* "/images/pa.jpeg",*/
     ],
     bg: "#fdf6ec",
     tag: "Tendencia",
