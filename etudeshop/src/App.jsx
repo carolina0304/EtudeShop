@@ -308,6 +308,81 @@ function ImageCarousel({ images, bg, tag, onImageClick }) {
 const products = [
   {
     id: 1,
+    name: "Stanley Iceflow Naranja 887 ml",
+    category: "Stanley",
+    price: "$790",
+    desc: "Mantiene frío 12 hrs • Incluye popote • Antiderrame",
+    images: [
+      "/images/stanleynaranja.jpg",
+      "/images/stanleynaranja02.jpg",
+      "/images/stanleynaranja03.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 2,
+    name: "Owala FreeSip NEGRO  710 ml",
+    category: "Owala",
+    price: "$490",
+    desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
+    images: [
+      "/images/owalanegro.jpg",
+      "/images/owalanegro2.jpg",
+      "/images/owalanegro3.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 3,
+    name: "Owala FreeSip MORADO 710 ml",
+    category: "Owala",
+    price: "$490",
+    desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
+    images: [
+      "/images/owalamorado.jpg",
+      "/images/owalamorado2.jpg",
+      "/images/owalamorado3.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 4,
+    name: "Owala FreeSip ROSA 710 ml",
+    category: "Owala",
+    price: "$490",
+    desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
+    images: [
+      "/images/owalarosa.jpg",
+      "/images/owalarosa2.jpg",
+      "/images/owalarosa3.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 5,
+    name: "Owala FreeSip DURAZNO 710 ml",
+    category: "Owala",
+    price: "$490",
+    desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
+    images: [
+      "/images/owaladurazno.jpg",
+      "/images/owaladurazno2.jpg",
+      "/images/owaladurazno3.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 6,
     name: "Stanley Qhencher Rosa Cuarzo 887 ml",
     category: "Stanley",
     price: "$790",
@@ -324,7 +399,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 2,
+    id: 7,
     name: "Stanley Qhencher Azul 887 ml",
     category: "Stanley",
     price: "$790",
@@ -341,7 +416,7 @@ const products = [
     urgencia: "🔥 Últimas 3 unidades",
   },
   {
-    id: 3,
+    id: 8,
     name: "Stanley Iceflow Toronja 887 ml",
     category: "Stanley",
     price: "$790",
@@ -356,7 +431,7 @@ const products = [
     urgencia: "🔥 Últimas 3 unidades",
   },
   {
-    id: 4,
+    id: 9,
     name: "Lonchera Titan Deep Freeze",
     category: "Loncheras",
     price: "$590",
@@ -373,7 +448,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 5,
+    id: 10,
     name: "Termo Reduce Halo 946ml",
     category: "Termos",
     price: "$250",
@@ -389,7 +464,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 6,
+    id: 11,
     name: "Set de Vasos King Cristal",
     category: "Hogar",
     price: "$500",
@@ -405,7 +480,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 7,
+    id: 12,
     name: "Thermoflask 740ml",
     category: "Termos",
     price: "$300",
@@ -422,7 +497,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 8,
+    id: 13,
     name: "Termo Reduce NIÑOS",
     category: "Termos",
     price: "$250",
@@ -438,7 +513,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 9,
+    id: 14,
     name: "Picadora y Rebanadora MIU",
     category: "Hogar",
     price: "$490",
@@ -454,7 +529,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 10,
+    id: 15,
     name: "Platos Hondos Over & Back",
     category: "Hogar",
     price: "$400",
@@ -480,7 +555,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },*/
   {
-    id: 12,
+    id: 16,
     name: "Termo Reduce 1.48 lts.",
     category: "Termos",
     price: "$400",
@@ -496,7 +571,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 13,
+    id: 17,
     name: "Tazas Reduce 510 ml",
     category: "Reduce",
     price: "$290 c/u",
@@ -531,7 +606,7 @@ const products = [
     urgencia: "🔥 Última unidad",
   },*/
   {
-    id: 14,
+    id: 18,
     name: "Stanley Iceflow Morado 887 ml",
     category: "Stanley",
     price: "$790",
@@ -546,7 +621,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 15,
+    id: 19,
     name: "Botella Tritan Zulu",
     category: "Botellas",
     price: "$200",
@@ -561,7 +636,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 16,
+    id: 20,
     name: "Jarra Reduce",
     category: "Botellas",
     price: "$200",
@@ -624,7 +699,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },*/
   {
-    id: 20,
+    id: 21,
     name: "Taza o Vaso Thermoflask",
     category: "Termos",
     price: "$250",
