@@ -166,8 +166,11 @@ function Lightbox({ images, startIndex, onClose }) {
   );
 }
 
-function ImageCarousel({ images, bg, tag, onImageClick }) {
+function ImageCarousel({ images, bg, tag, onImageClick, video }) {
   const [current, setCurrent] = useState(0);
+  const total = images.length + (video ? 1 : 0);
+  const isVideo = video && current === images.length;
+
   return (
     <div
       style={{
@@ -177,24 +180,38 @@ function ImageCarousel({ images, bg, tag, onImageClick }) {
         overflow: "hidden",
       }}
     >
-      <img
-        src={images[current]}
-        alt=""
-        onClick={() => onImageClick(current)}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          objectPosition: "center center",
-          cursor: "zoom-in",
-        }}
-      />
-      {images.length > 1 && (
+      {/* Muestra video o imagen según el índice */}
+      {isVideo ? (
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      ) : (
+        <img
+          src={images[current]}
+          alt=""
+          onClick={() => onImageClick(current)}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center center",
+            cursor: "zoom-in",
+          }}
+        />
+      )}
+
+      {/* Flechas */}
+      {total > 1 && (
         <>
           <button
             onClick={(e) => {
               e.stopPropagation();
-              setCurrent(current === 0 ? images.length - 1 : current - 1);
+              setCurrent(current === 0 ? total - 1 : current - 1);
             }}
             style={{
               position: "absolute",
@@ -220,7 +237,7 @@ function ImageCarousel({ images, bg, tag, onImageClick }) {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              setCurrent(current === images.length - 1 ? 0 : current + 1);
+              setCurrent(current === total - 1 ? 0 : current + 1);
             }}
             style={{
               position: "absolute",
@@ -243,34 +260,53 @@ function ImageCarousel({ images, bg, tag, onImageClick }) {
           >
             ›
           </button>
-          <div
-            style={{
-              position: "absolute",
-              bottom: "8px",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              gap: "5px",
-            }}
-          >
-            {images.map((_, i) => (
-              <div
-                key={i}
-                onClick={() => setCurrent(i)}
-                style={{
-                  width: "6px",
-                  height: "6px",
-                  borderRadius: "50%",
-                  background:
-                    i === current ? "#1a1a1a" : "rgba(255,255,255,0.8)",
-                  cursor: "pointer",
-                  transition: "background .2s",
-                }}
-              />
-            ))}
-          </div>
         </>
       )}
+
+      {/* Puntitos — el del video muestra ▶ */}
+      {total > 1 && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: "8px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            gap: "5px",
+          }}
+        >
+          {images.map((_, i) => (
+            <div
+              key={i}
+              onClick={() => setCurrent(i)}
+              style={{
+                width: "6px",
+                height: "6px",
+                borderRadius: "50%",
+                background: i === current ? "#fff" : "rgba(255,255,255,0.5)",
+                cursor: "pointer",
+                transition: "background .2s",
+              }}
+            />
+          ))}
+          {video && (
+            <div
+              onClick={() => setCurrent(images.length)}
+              style={{
+                fontSize: "10px",
+                color:
+                  current === images.length ? "#fff" : "rgba(255,255,255,0.5)",
+                cursor: "pointer",
+                lineHeight: 1,
+                marginTop: "-1px",
+              }}
+            >
+              ▶
+            </div>
+          )}
+        </div>
+      )}
+
       <span
         style={{
           position: "absolute",
@@ -287,20 +323,38 @@ function ImageCarousel({ images, bg, tag, onImageClick }) {
       >
         {tag}
       </span>
-      <span
-        style={{
-          position: "absolute",
-          bottom: "10px",
-          right: "10px",
-          background: "rgba(0,0,0,0.45)",
-          color: "#fff",
-          fontSize: "11px",
-          padding: "3px 8px",
-          borderRadius: "20px",
-        }}
-      >
-        🔍 Ver
-      </span>
+      {!isVideo && (
+        <span
+          style={{
+            position: "absolute",
+            bottom: "10px",
+            right: "10px",
+            background: "rgba(0,0,0,0.45)",
+            color: "#fff",
+            fontSize: "11px",
+            padding: "3px 8px",
+            borderRadius: "20px",
+          }}
+        >
+          🔍 Ver
+        </span>
+      )}
+      {isVideo && (
+        <span
+          style={{
+            position: "absolute",
+            bottom: "10px",
+            right: "10px",
+            background: "rgba(0,0,0,0.45)",
+            color: "#fff",
+            fontSize: "11px",
+            padding: "3px 8px",
+            borderRadius: "20px",
+          }}
+        >
+          🎥 Video
+        </span>
+      )}
     </div>
   );
 }
@@ -346,7 +400,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 1,
+    id: 1.5,
     name: "Owala FreeSip LILA  710 ml",
     category: "Owala",
     price: "$450",
@@ -368,6 +422,7 @@ const products = [
       "/images/owalanegro2.jpg",
       "/images/owalanegro3.jpg",
     ],
+    video: "/videos/owalanegro-video.mp4",
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
@@ -383,6 +438,7 @@ const products = [
       "/images/owalamorado2.jpg",
       "/images/owalamorado3.jpg",
     ],
+    video: "/videos/owalamorado-video.mp4",
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
@@ -394,6 +450,7 @@ const products = [
     price: "$450",
     desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
     images: ["/images/OWALAS4.webp", "/images/owalarosa.jpg"],
+    video: "/videos/owalarosa-video.mp4",
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
@@ -410,6 +467,7 @@ const products = [
       "/images/owaladurazno2.jpg",
       "/images/owaladurazno3.jpg",
     ],
+    video: "/videos/owaladurazno-video.mp4",
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
@@ -459,6 +517,7 @@ const products = [
       "/images/stanleyamarillo2.jpg",
       "/images/stanleyamarillo3.jpg",
     ],
+    video: "/videos/stanley-amarillo.mp4",
     bg: "#fdf6ec",
     tag: "Más vendido",
     urgencia: "🔥 Últimas 3 unidades",
@@ -520,6 +579,7 @@ const products = [
       "/images/QUZZ1337.JPG",
       "/images/TCVL4606.JPG",
     ],
+    video: "/videos/vasoskristal-video.mp4",
     bg: "#f0ecfd",
     tag: "Ideal de Regalo",
     urgencia: "🔥 Últimas unidades",
@@ -640,6 +700,7 @@ const products = [
       "/images/vasos7.webp",
       "/images/vasos8.webp",
     ],
+    video: "/videos/tazamorada-video.mp4",
     bg: "#fdf6ec",
     tag: "Más vendido",
     urgencia: "🔥 Última unidad",
@@ -1261,6 +1322,7 @@ export default function App() {
                 images={p.images}
                 bg={p.bg}
                 tag={p.tag}
+                video={p.video}
                 onImageClick={(idx) =>
                   setLightbox({ images: p.images, index: idx })
                 }
