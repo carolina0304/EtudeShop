@@ -378,7 +378,7 @@ const products = [
   {
     id: 1,
     name: "Owala FreeSip 925 ml",
-    category: "Owala",
+    category: "Termos",
     price: "$450",
     desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
     images: [
@@ -413,7 +413,7 @@ const products = [
   {
     id: 1.5,
     name: "Owala FreeSip LILA  710 ml",
-    category: "Owala",
+    category: "Termos",
     price: "$450",
     desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
     images: ["/images/Owalamorado01.webp", "/images/Owalamorado02.jpg"],
@@ -441,7 +441,7 @@ const products = [
   {
     id: 3,
     name: "Owala FreeSip MORADO 710 ml",
-    category: "Owala",
+    category: "Termos",
     price: "$450",
     desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
     images: [
@@ -457,7 +457,7 @@ const products = [
   {
     id: 4,
     name: "Owala FreeSip ROSA 710 ml",
-    category: "Owala",
+    category: "Termos",
     price: "$450",
     desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
     images: ["/images/OWALAS4.webp", "/images/owalarosa.jpg"],
@@ -469,7 +469,7 @@ const products = [
   {
     id: 5,
     name: "Owala FreeSip DURAZNO 710 ml",
-    category: "Owala",
+    category: "Termos",
     price: "$450",
     desc: "Mantiene frío 24 hrs • Incluye popote • Asa de transporte",
     images: [
@@ -707,7 +707,7 @@ const products = [
   {
     id: 17,
     name: "Tazas Reduce 510 ml",
-    category: "Reduce",
+    category: "Termos",
     price: "$290 c/u",
     desc: "Mantiene caliente 6 hrs • Incluye tapa • Acero inoxidable",
     images: [
