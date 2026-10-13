@@ -390,14 +390,25 @@ const products = [
       "/images/Owalaverderosa02.webp",
       "/images/OwalaVerde01.webp",
       "/images/OwalaVerde02.webp",
-      "/images/Boo1.webp",
-      "/images/Boo2.webp",
-      "/images/Boo3.webp",
-      "/images/Boo4.webp",
     ],
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 1.2,
+    name: "Vaso Thermoflask 474 ml",
+    category: "Termos",
+    price: "$290",
+    desc: "Mantiene frío 24 hrs • Incluye popote •  Bebidas calientes hasta por 12 horas",
+    images: [
+      "/images/imagesthermo.jpg",
+      "/images/imagesthermo2.jpg",
+      "/images/imagesthermo3.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nuevo",
+    urgencia: "⚡ Disponible ahora",
   },
   {
     id: 1.5,
@@ -410,7 +421,7 @@ const products = [
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
   },
-  {
+  /*{
     id: 2,
     name: "Owala FreeSip NEGRO  710 ml",
     category: "Owala",
@@ -426,7 +437,7 @@ const products = [
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
-  },
+  },*/
   {
     id: 3,
     name: "Owala FreeSip MORADO 710 ml",
@@ -471,6 +482,20 @@ const products = [
     bg: "#fdf6ec",
     tag: "Nueva tendencia",
     urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 5.2,
+    name: "Cosmetiquera de Stella & Max",
+    category: "Hogar",
+    price: "$490",
+    desc: "3 secciones para organizar tus productos • Diseño práctico y bonito •  Perfecta para llevar de viaje",
+    images: [
+      "/images/imagescosmetiquera.jpg",
+      "/images/imagescosmetiquera2.jpg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nuevo",
+    urgencia: "⚡ Disponible ahora",
   },
   {
     id: 6,
@@ -592,7 +617,6 @@ const products = [
     desc: "Antiderrames • Acero inoxidable • Asa Plegable",
     images: [
       "/images/IMG_4037.JPG",
-      "/images/IMG_4035.JPG",
       "/images/IMG_4034.JPG",
       "/images/IMG_4032.JPG",
       "/images/IMG_4029.JPG",
