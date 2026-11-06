@@ -392,7 +392,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 1.2,
+    id: 2,
     name: "Owala FreeSip 925 ml",
     category: "Termos",
     price: "$450",
@@ -412,7 +412,37 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 1.3,
+    id: 3,
+    name: "Tazas de ceramica navideñas",
+    category: "Navidad",
+    price: "$480",
+    desc: "Capacidad 400ml • Diseño apilable •  Ceramica",
+    images: [
+      "/images/navidad01.jpeg",
+      "/images/navidad02.jpeg",
+      "/images/navidad03.jpeg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nuevo",
+    urgencia: "⚡ Disponible ahora",
+  },
+  {
+    id: 4,
+    name: "Cojin de perrito navideño",
+    category: "Navidad",
+    price: "$350",
+    desc: "Tamaño 47x47cm • Comodo y esponjoso •  Diseño festivo",
+    images: [
+      "/images/cojin01.jpeg",
+      "/images/cojin02.jpeg",
+      "/images/cojin03.jpeg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nuevo",
+    urgencia: "⚡ Disponible ahora",
+  },
+  {
+    id: 5,
     name: "Vaso Thermoflask 474 ml",
     category: "Termos",
     price: "$290",
@@ -427,7 +457,23 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 1.5,
+    id: 6,
+    name: "Calentador de Torre Lasko",
+    category: "Hogar",
+    price: "$1500",
+    desc: "3 ajustes de calor • Ahorro de energia •  Seguro y confiable",
+    images: [
+      "/images/calentador01.jpeg",
+      "/images/calentador02.jpeg",
+      "/images/calentador03.jpeg",
+      "/images/calentador04.jpeg",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nuevo",
+    urgencia: "⚡ Disponible ahora",
+  },
+  {
+    id: 7,
     name: "Owala FreeSip LILA  710 ml",
     category: "Termos",
     price: "$450",
@@ -455,7 +501,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },*/
   {
-    id: 3,
+    id: 8,
     name: "Owala FreeSip MORADO 710 ml",
     category: "Termos",
     price: "$450",
@@ -471,7 +517,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 4,
+    id: 9,
     name: "Owala FreeSip ROSA 710 ml",
     category: "Termos",
     price: "$450",
@@ -483,7 +529,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 5,
+    id: 10,
     name: "Owala FreeSip DURAZNO 710 ml",
     category: "Termos",
     price: "$450",
@@ -500,7 +546,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 5.2,
+    id: 11,
     name: "Cosmetiquera de Stella & Max",
     category: "Hogar",
     price: "$490",
@@ -521,7 +567,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 6,
+    id: 12,
     name: "Stanley Qhencher Rosa Cuarzo 887 ml",
     category: "Stanley",
     price: "$790",
@@ -538,7 +584,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 7,
+    id: 13,
     name: "Stanley Qhencher Azul 887 ml",
     category: "Stanley",
     price: "$790",
@@ -555,7 +601,7 @@ const products = [
     urgencia: "🔥 Últimas 3 unidades",
   },
   {
-    id: 8,
+    id: 14,
     name: "Stanley Iceflow Toronja 887 ml",
     category: "Stanley",
     price: "$790",
@@ -571,7 +617,7 @@ const products = [
     urgencia: "🔥 Últimas 3 unidades",
   },
   {
-    id: 9,
+    id: 15,
     name: "Lonchera Titan Deep Freeze",
     category: "Loncheras",
     price: "$590",
@@ -588,7 +634,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 10,
+    id: 16,
     name: "Termo Reduce Halo 946ml",
     category: "Termos",
     price: "$250",
@@ -613,7 +659,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 11,
+    id: 17,
     name: "Set de Vasos King Cristal",
     category: "Hogar",
     price: "$500",
@@ -633,7 +679,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 12,
+    id: 18,
     name: "Thermoflask 740ml",
     category: "Termos",
     price: "$300",
@@ -649,7 +695,7 @@ const products = [
     urgencia: "⚡ Disponible ahora",
   },
   {
-    id: 13,
+    id: 19,
     name: "Termo Reduce NIÑOS",
     category: "Termos",
     price: "$250",
@@ -670,7 +716,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 14,
+    id: 20,
     name: "Picadora y Rebanadora MIU",
     category: "Hogar",
     price: "$490",
@@ -686,7 +732,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 15,
+    id: 21,
     name: "Platos Hondos Over & Back",
     category: "Hogar",
     price: "$400",
@@ -712,7 +758,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },*/
   {
-    id: 16,
+    id: 22,
     name: "Termo Reduce 1.48 lts.",
     category: "Termos",
     price: "$400",
@@ -728,7 +774,7 @@ const products = [
     urgencia: "🔥 Pocas unidades",
   },
   {
-    id: 17,
+    id: 23,
     name: "Tazas Reduce 510 ml",
     category: "Termos",
     price: "$290 c/u",
@@ -769,7 +815,7 @@ const products = [
     urgencia: "🔥 Última unidad",
   },*/
   {
-    id: 18,
+    id: 24,
     name: "Stanley Iceflow Morado 887 ml",
     category: "Stanley",
     price: "$790",
@@ -784,7 +830,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },
   {
-    id: 19,
+    id: 25,
     name: "Botella Tritan Zulu",
     category: "Botellas",
     price: "$200",
@@ -862,7 +908,7 @@ const products = [
     urgencia: "🔥 Últimas unidades",
   },*/
   {
-    id: 21,
+    id: 26,
     name: "Taza o Vaso Thermoflask",
     category: "Termos",
     price: "$250",
@@ -885,18 +931,10 @@ const categories = [
   "Termos",
   "Botellas",
   "Loncheras",
-  "Alexas",
   "Hogar",
   "Navidad",
 ];
-const brands = [
-  "Stanley",
-  "Thermoflask",
-  "Reduce",
-  "King Crystal",
-  "Alexas",
-  "Titan",
-];
+const brands = ["Stanley", "Thermoflask", "Reduce", "King Crystal", "Titan"];
 const garantias = [
   {
     icon: "✅",
