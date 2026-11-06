@@ -377,6 +377,22 @@ const products = [
   },*/
   {
     id: 1,
+    name: "Contenedores hermeticos Vidrio Trudeau",
+    category: "Hogar",
+    price: "$790",
+    desc: "Silicona libre de BPA • Resistente • Uso seguro en el microondas",
+    images: [
+      "/images/blanco01.png",
+      "/images/blanco02.png",
+      "/images/blanco03.png",
+      "/images/blanco04.png",
+    ],
+    bg: "#fdf6ec",
+    tag: "Nueva tendencia",
+    urgencia: "🔥 Últimas 2 unidades",
+  },
+  {
+    id: 1.2,
     name: "Owala FreeSip 925 ml",
     category: "Termos",
     price: "$450",
@@ -396,7 +412,7 @@ const products = [
     urgencia: "🔥 Últimas 2 unidades",
   },
   {
-    id: 1.2,
+    id: 1.3,
     name: "Vaso Thermoflask 474 ml",
     category: "Termos",
     price: "$290",
@@ -490,8 +506,15 @@ const products = [
     price: "$490",
     desc: "3 secciones para organizar tus productos • Diseño práctico y bonito •  Perfecta para llevar de viaje",
     images: [
-      "/images/imagescosmetiquera.jpg",
-      "/images/imagescosmetiquera2.jpg",
+      "/images/cosmetiquera01.jpeg",
+      "/images/cosmetiquera02.jpeg",
+      "/images/cosmetiquera03.jpeg",
+      "/images/cosmetiquera04.jpeg",
+      "/images/cosmetiquera05.jpeg",
+      "/images/cosmetiquera06.jpeg",
+      "/images/cosmetiquera07.jpeg",
+      "/images/cosmetiquera08.jpeg",
+      "/images/cosmetiquera09.jpeg",
     ],
     bg: "#fdf6ec",
     tag: "Nuevo",
@@ -864,6 +887,7 @@ const categories = [
   "Loncheras",
   "Alexas",
   "Hogar",
+  "Navidad",
 ];
 const brands = [
   "Stanley",
