@@ -798,7 +798,7 @@ const products = [
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
   },
-  {
+  /* {
     id: 20,
     name: "Jarra Reduce",
     category: "Botellas",
@@ -813,7 +813,7 @@ const products = [
     bg: "#fdf6ec",
     tag: "Más vendido",
     urgencia: "🔥 Últimas unidades",
-  },
+  },*/
   /*{
     id: 17,
     name: "Alexa Amazon Pop",
